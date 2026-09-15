@@ -1,0 +1,10 @@
+body { background: #eef5ff; color: #23364b; font-family: Arial, sans-serif; }
+h1, p { line-height: 1.5; }
+#page-title { text-align: center; color: #155a9b; }
+.card { max-width: 700px; margin: 40px auto; padding: 24px; background: white; border: 1px solid #c4d7e7; border-radius: 8px; }
+.hobbies { list-style-type: square; }
+.reading { color: #227d59; }
+.music { color: #a5429c; }
+.coding { color: #cb5c27; }
+button { padding: 10px 16px; border: 0; border-radius: 4px; color: white; background: #155a9b; cursor: pointer; }
+button:hover, button:focus-visible { background: #0b3963; transform: translateY(-2px); }

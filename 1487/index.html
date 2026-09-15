@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tạo form đơn giản</title>
+<style>body{font-family:Arial,sans-serif;background:#f0f7ff;color:#17324d;padding:24px}main{max-width:650px;margin:auto}form{background:white;border:1px solid #b6cce1;padding:24px;margin:24px 0}h2{color:#0867ab}label{display:inline-block;margin:8px 12px 8px 0}input,select,textarea,button{font:inherit}button{padding:8px 12px;margin:8px 8px 0 0}</style></head>
+<body><main><h1>Bài tập: Tạo form đơn giản</h1>
+<form method="get"><h2>Phần 1: Sở thích của bạn</h2>
+<p><label for="yourname">Họ và tên</label><input id="yourname" name="yourname" type="text" required></p>
+<p><label for="email">Email</label><input id="email" name="email" type="email" required></p>
+<fieldset><legend>Sở thích</legend><label><input type="checkbox" name="hobby" value="sports"> Thể thao</label><label><input type="checkbox" name="hobby" value="music"> Âm nhạc</label><label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label><label><input type="checkbox" name="hobby" value="travel"> Du lịch</label></fieldset>
+<button type="submit">Gửi thông tin</button><button type="reset">Nhập lại</button></form>
+<form method="get"><h2>Phần 2: Đăng ký học viên</h2>
+<p><label for="student_name">Họ và tên</label><input id="student_name" name="student_name" type="text" required></p>
+<p><label for="birth_date">Ngày sinh</label><input id="birth_date" name="birth_date" type="date"></p>
+<fieldset><legend>Giới tính</legend><label><input type="radio" name="gender" value="male"> Nam</label><label><input type="radio" name="gender" value="female"> Nữ</label></fieldset>
+<p><label for="address">Địa chỉ</label><textarea id="address" name="address" rows="3"></textarea></p>
+<p><label for="course">Khóa học</label><select id="course" name="course"><option value="web">Lập trình web</option><option value="java">Java</option></select></p>
+<p><label for="student_email">Email</label><input id="student_email" name="student_email" type="email"></p>
+<p><label for="phone">Điện thoại</label><input id="phone" name="phone" type="tel"></p>
+<button type="submit">Đăng ký</button><button type="reset">Nhập lại</button></form>
+</main></body></html>

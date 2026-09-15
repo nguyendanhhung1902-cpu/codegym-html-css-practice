@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market Research Survey</title>
+  <style>
+    body { font: 16px Arial, sans-serif; color: #30343b; background: #f4f6f8; margin: 0; padding: 24px; }
+    main { max-width: 760px; margin: auto; background: white; padding: 28px; border: 1px solid #d5dbe1; }
+    h1 { margin: 0 0 8px; font-size: 26px; }
+    .intro { margin: 0 0 26px; color: #626b75; }
+    .field { margin: 22px 0; }
+    .field > label, legend { display: block; font-weight: bold; margin-bottom: 10px; }
+    select, textarea, input[type="number"] { font: inherit; padding: 8px; border: 1px solid #aeb8c2; border-radius: 3px; }
+    select { min-width: 220px; } textarea { box-sizing: border-box; width: 100%; }
+    fieldset { border: 0; padding: 0; } fieldset label { display: inline-block; margin: 6px 18px 6px 0; }
+    .price input { width: 80px; } .price small { display: inline-block; margin-right: 12px; }
+    .table-wrap { overflow-x: auto; } table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px; border: 1px solid #d5dbe1; text-align: center; }
+    th:first-child { text-align: left; min-width: 230px; } thead { background: #edf2f6; }
+    button { background: #3478ae; color: white; border: 0; border-radius: 4px; padding: 10px 22px; font: inherit; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Market Research Survey</h1>
+    <p class="intro">Please take a few moments to complete this satisfaction survey.</p>
+    <form method="get">
+      <div class="field"><label for="age">What is your age range?</label><select id="age" name="age"><option>18-24</option><option>25-34</option><option>35-50</option><option>50+</option></select></div>
+      <div class="field"><label for="income">What is your yearly income range?</label><select id="income" name="income"><option>$0 - $25,000</option><option>$25,001 - $50,000</option><option>$50,001 - $100,000</option><option>$100,000+</option></select></div>
+      <fieldset class="field"><legend>Gender Identity</legend><label><input type="radio" name="gender" value="male"> Male</label><label><input type="radio" name="gender" value="female"> Female</label><label><input type="radio" name="gender" value="nonbinary"> Nonbinary</label><label><input type="radio" name="gender" value="other"> Other</label><input type="text" name="gender_other" aria-label="Other gender identity"></fieldset>
+      <fieldset class="field"><legend>Which of the following products have you purchased in the last 2 months? Please check all that apply.</legend><label><input type="checkbox" name="products" value="1"> Product 1</label><label><input type="checkbox" name="products" value="2"> Product 2</label><label><input type="checkbox" name="products" value="3"> Product 3</label></fieldset>
+      <fieldset class="field"><legend>How often would you use our new product?</legend><label><input type="radio" name="frequency" value="daily"> Daily</label><label><input type="radio" name="frequency" value="weekly"> Weekly</label><label><input type="radio" name="frequency" value="monthly"> Monthly</label></fieldset>
+      <div class="field price"><label>What would you pay for the new product?</label>$ <input type="number" name="dollars" min="0" aria-label="Dollars"><small>Dollars</small> . <input type="number" name="cents" min="0" max="99" aria-label="Cents"><small>Cents</small></div>
+      <div class="field"><label for="features">What features would you like to see in the new product?</label><textarea id="features" name="features" rows="5"></textarea></div>
+      <fieldset class="field"><legend>Please rate your level of agreement with the following statements.</legend><div class="table-wrap"><table><thead><tr><th scope="col">Statement</th><th scope="col">Strongly Disagree</th><th scope="col">Disagree</th><th scope="col">Agree</th><th scope="col">Strongly Agree</th></tr></thead><tbody>
+        <tr><th scope="row">Our products are priced fairly.</th><td><input type="radio" name="price_fair" value="1" aria-label="Price is fair: strongly disagree"></td><td><input type="radio" name="price_fair" value="2" aria-label="Price is fair: disagree"></td><td><input type="radio" name="price_fair" value="3" aria-label="Price is fair: agree"></td><td><input type="radio" name="price_fair" value="4" aria-label="Price is fair: strongly agree"></td></tr>
+        <tr><th scope="row">Our products are high quality.</th><td><input type="radio" name="quality" value="1" aria-label="Quality: strongly disagree"></td><td><input type="radio" name="quality" value="2" aria-label="Quality: disagree"></td><td><input type="radio" name="quality" value="3" aria-label="Quality: agree"></td><td><input type="radio" name="quality" value="4" aria-label="Quality: strongly agree"></td></tr>
+        <tr><th scope="row">You would recommend our product to a friend or coworker.</th><td><input type="radio" name="recommend" value="1" aria-label="Recommend: strongly disagree"></td><td><input type="radio" name="recommend" value="2" aria-label="Recommend: disagree"></td><td><input type="radio" name="recommend" value="3" aria-label="Recommend: agree"></td><td><input type="radio" name="recommend" value="4" aria-label="Recommend: strongly agree"></td></tr>
+      </tbody></table></div></fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

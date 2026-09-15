@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh sách trong CSS</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 24px auto; line-height: 1.6; color: #24364a; }
+    section { padding: 10px 20px; margin: 18px 0; border: 1px solid #cbd6e2; border-radius: 6px; }
+    .square { list-style-type: square; }
+    .roman { list-style-type: upper-roman; }
+    .inside { list-style-position: inside; background: #e8f3ff; padding: 12px; }
+    .image { list-style-type: disc; list-style-image: url("star.svg"); }
+    .short { list-style: lower-alpha inside; }
+    .colored { color: #087d65; }
+    .colored li { color: #7244a0; background: #f3ecff; margin: 4px 0; padding: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Danh sách trong CSS</h1>
+  <section><h2>Dấu vuông cho danh sách không thứ tự</h2><ul class="square"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></section>
+  <section><h2>Số La Mã cho danh sách có thứ tự</h2><ol class="roman"><li>Chuẩn bị nội dung</li><li>Viết mã HTML</li><li>Thêm CSS</li></ol></section>
+  <section><h2>Đánh dấu bên trong dòng nội dung</h2><ul class="inside"><li>Mục thứ nhất của danh sách</li><li>Mục thứ hai của danh sách</li></ul></section>
+  <section><h2>Đánh dấu bằng hình ảnh</h2><ul class="image"><li>Sao vàng</li><li>Sao xanh</li><li>Sao tím</li></ul></section>
+  <section><h2>Thuộc tính rút gọn và màu sắc</h2><ol class="short colored"><li>Thiết kế</li><li>Lập trình</li><li>Kiểm tra</li></ol></section>
+</body>
+</html>
